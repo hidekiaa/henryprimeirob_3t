@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>primeiro b</title>
-   <script src="estudo.js"></script>
+    <title>Primeiro G</title>
+    <script src="estudo.js"></script>
+    <link rel="stylesheet" href="geral.css">
 </head>
+
 <body>
-   Valor: <input id="valor" type="text"><br>
-   juros(A.M): <input id="juros" type="text"><br>
-   meses: <input id="meses"  type="text"><br>
-    <button onclick="total()"> Enviar </button>
+    <div class="calc">
+        <div id="spTotal">
+            <span id="total">R$ 0,00</span>
+        </div>
+        Capital: <input id="capital" type="text"><br>
+        Juros mensais: <input id="juros" type="text"><br>
+        Quantidade de meses: <input id="meses" type="text"><br>
+        <button onclick="total()">Calcular</button>
+        <div id="spLista">
+            <span id="listaMes"></span>
+        </div>
+    </div>
 
-    <br><br><br><br>
+    <div class="calcESG">
+        <div class="spRaiz">
+            <span id="raiz">x1:?  x2:?</span>
+        </div>
+        a: <input id="a" type="text"> <br>
+        b: <input id="b" type="text"> <br>
+        c: <input id="c" type="text"> <br>
+        <button onclick="calculaRaiz()">Calcula</button>
+    </div>
 
-    <span id="resul">resultado 0,00</span><br>
+</body>
 
-    numero 1: <input id="n1" type="text"><br>
-    numero 2: <input id="n2" type="text"><br>
-    numero 3: <input id="n3" type="text"><br>
-    numero 4: <input id="n4" type="text"><br>
-
-<button onclick="média()">Calcular a média</button>
-<button onclick="soma()">Calcular a soma</button>
-<button onclick="multi()">Calcular a multiplicação</button>
-
-</body> 
 </html>
+Footer
